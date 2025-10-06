@@ -12,11 +12,11 @@ import { Alert } from "@/ui/components/Alert";
 import { IconWithBackground } from "@/ui/components/IconWithBackground";
 import { Tabs } from "@/ui/components/Tabs";
 
-export default function Home() {
+export default function DashboardPage() {
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Navigation Sidebar */}
-      <GlassmorphicSidebar3 />
+      <GlassmorphicSidebar3 className="w-64 flex-shrink-0" />
       
       {/* Main Content */}
       <div className="flex-1 p-6">
@@ -108,14 +108,12 @@ export default function Home() {
             </div>
             <AreaChart 
               className="w-full h-64"
-              categories={["Episodes"]}
               data={[
-                { Stage: 'Planning', Episodes: 12 },
-                { Stage: 'Recording', Episodes: 5 },
-                { Stage: 'Editing', Episodes: 3 },
-                { Stage: 'Published', Episodes: 45 }
+                { name: 'Planning', value: 12 },
+                { name: 'Recording', value: 5 },
+                { name: 'Editing', value: 3 },
+                { name: 'Published', value: 45 }
               ]}
-              index="Stage"
             />
           </div>
 

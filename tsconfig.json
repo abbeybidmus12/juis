@@ -28,6 +28,9 @@
       ],
       "@/subframe/*": [
         "./src/subframe/*"
+      ],
+      "@/ui/*": [
+        "./src/ui/*"
       ]
     }
   },
@@ -36,7 +39,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "./.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
